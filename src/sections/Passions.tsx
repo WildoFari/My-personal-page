@@ -1,6 +1,6 @@
 export default function Passions() {
     return (
-        <section>
+        <section id="passions" className="py-20">
             <h2>Mis pasiones</h2>
             <ul>
                 <li>🏃 Trail Running</li>

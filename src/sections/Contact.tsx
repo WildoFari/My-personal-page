@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <section>
+        <section id="contact" className="py-20">
             <h2>Contacto</h2>
             <p>Puedes encontrarme en:</p>
             <ul>

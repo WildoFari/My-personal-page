@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <section>
+        <section id="projects" className="py-20">
             <h2>Proyectos</h2>
             <p>Estos son algunos de los proyectos en los que he trabajado:</p>
             <ul>
