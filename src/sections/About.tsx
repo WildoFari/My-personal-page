@@ -94,7 +94,7 @@ export default function About() {
             <p className="text-gray-600 dark:text-gray-400">Creando magia digital, un 'Hola Mundo' a la vez.</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h4 className="text-xl font-semibold mb-2">Mi Viaje, Mis Metas</h4>
+            <h4 className="text-xl font-semibold mb-2">Mi Viaje</h4>
             <p className="text-gray-600 dark:text-gray-400">Este es mi viaje, estas son mis metas, y cada paso que doy es una parte de mi historia.</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
