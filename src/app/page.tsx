@@ -8,7 +8,7 @@ import Projects from "@/sections/Projects";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <Passions />
       <Projects />
