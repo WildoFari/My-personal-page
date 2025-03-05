@@ -38,10 +38,17 @@ export default function Passions() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     <PassionItem
+                        icon="💻"
+                        title="Desarrollo Web"
+                        description="Construyendo experiencias digitales innovadoras."
+                        images={["/images/web1.jpg", "/images/web2.jpg", "/images/web3.jpg"]}
+                    />
+
+                    <PassionItem
                         icon="🚴"
                         title="Andar en bicicleta"
                         description="Recorriendo horizontes sobre dos ruedas."
-                        images={["/images/profile.jpg", "/images/bike2.jpg", "/images/bike3.jpg"]}
+                        images={["/images/bike1.jpg", "/images/bike2.jpg", "/images/bike3.jpg"]}
                     />
 
                     <PassionItem
@@ -56,13 +63,6 @@ export default function Passions() {
                         title="Anime"
                         description="Historias que inspiran y mundos por descubrir."
                         images={["/images/anime1.jpg", "/images/anime2.jpg", "/images/anime3.jpg"]}
-                    />
-
-                    <PassionItem
-                        icon="💻"
-                        title="Desarrollo Web"
-                        description="Construyendo experiencias digitales innovadoras."
-                        images={["/images/web1.jpg", "/images/web2.jpg", "/images/web3.jpg"]}
                     />
 
                     <PassionItem
