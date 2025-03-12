@@ -5,6 +5,7 @@ import profileImage from '../../public/images/profile.jpg';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
+import { FaCode, FaRoad, FaMapSigns } from 'react-icons/fa';
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -83,24 +84,53 @@ export default function About() {
       </div>
 
       <div ref={ref} className="mt-16 max-w-3xl mx-auto">
-        <h3 className="text-3xl font-semibold text-center mb-8">Un Poco de mi</h3>
+        <h3 className="text-4xl font-semibold text-center mb-10 text-gray-900 dark:text-white relative">
+          Un Poco de mi
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full bottom-[-10px]"></div>
+        </h3>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
           initial={{ opacity: 0, y: 50 }}
           animate={animation}
         >
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h4 className="text-xl font-semibold mb-2">Desarrollo Web</h4>
-            <p className="text-gray-600 dark:text-gray-400">Creando magia digital, un 'Hola Mundo' a la vez.</p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h4 className="text-xl font-semibold mb-2">Mi Viaje</h4>
-            <p className="text-gray-600 dark:text-gray-400">Este es mi viaje, estas son mis metas, y cada paso que doy es una parte de mi historia.</p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h4 className="text-xl font-semibold mb-2">Trail Running</h4>
-            <p className="text-gray-600 dark:text-gray-400">Conectando con la naturaleza, un sendero a la vez.</p>
-          </div>
+          <motion.div
+            whileHover={{ scale: 1.05, boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)' }}
+            transition={{ duration: 0.3 }}
+            className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center"
+          >
+            <FaCode className="text-4xl text-blue-500 mb-4" />
+            <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Desarrollo Web</h4>
+            <p className="text-gray-600 dark:text-gray-400 mb-5">Creando magia digital, un 'Hola Mundo' a la vez.</p>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full transition-colors duration-300">
+              Leer Más
+            </button>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05, boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)' }}
+            transition={{ duration: 0.3 }}
+            className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center"
+          >
+            <FaMapSigns className="text-4xl text-green-500 mb-4" />
+            <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Mi Viaje</h4>
+            <p className="text-gray-600 dark:text-gray-400 mb-5">Este es mi viaje, estas son mis metas, y cada paso que doy es una parte de mi historia.</p>
+            <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full transition-colors duration-300">
+              Leer Más
+            </button>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05, boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)' }}
+            transition={{ duration: 0.3 }}
+            className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center"
+          >
+            <FaRoad className="text-4xl text-yellow-500 mb-4" />
+            <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Trail Running</h4>
+            <p className="text-gray-600 dark:text-gray-400 mb-5">Conectando con la naturaleza, un sendero a la vez.</p>
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition-colors duration-300">
+              Leer Más
+            </button>
+          </motion.div>
         </motion.div>
       </div>
     </motion.section>
