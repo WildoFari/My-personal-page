@@ -50,21 +50,28 @@ export default function About() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="max-w-4xl mx-auto text-center">
+      <div ref={ref} className="max-w-4xl mx-auto text-center relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-3xl -z-10"></div>
+
         <motion.h2
-          className="text-5xl font-extrabold text-gray-900 dark:text-white mb-8 tracking-tight"
-          initial={{ opacity: 0, y: -50 }}
+          className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-14 tracking-tight shadow-md text-shadow-lg"
+          initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
           animate={animation}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           ¡Hola Mundo! Soy WilDev
         </motion.h2>
+
         <motion.p
-          className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-10"
-          initial={{ opacity: 0, y: 50 }}
+          className="text-xl leading-relaxed text-gray-900 dark:text-gray-300 mb-10 shadow-md text-shadow-sm"
+          initial={{ opacity: 0, y: 50, scale: 0.8, }}
           animate={animation}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           Un alma curiosa que se pierde entre líneas de código y senderos de montaña. Me encanta crear cosas nuevas, ya sean digitales o experiencias al aire libre.
         </motion.p>
+
+        <div className="w-40 h-1 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full shadow-md mb-12"></div>
       </div>
 
       <div className="flex justify-center">
