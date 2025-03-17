@@ -6,8 +6,18 @@ export default function Contact() {
                     Contacto
                 </h2>
                 <p className="text-xl mb-16 text-gray-300">
-                    ¡Conéctate conmigo en mis redes sociales para estar en contacto!
+                    Mis redes sociales para que me sigas.!
                 </p>
+                <span>Tengo novia y la amo mucho   🥰</span>
+                <a
+                    href="https://www.instagram.com/liz_fonseca18?igsh=MTRrNnp4dDludXg0dw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative inline-flex items-center justify-center p-4 overflow-hidden text-lg font-medium text-purple-600 rounded-lg shadow-2xl group-hover:shadow-xl group-hover:ring-2 group-hover:ring-offset-2 group-hover:ring-blue-400 transition-all duration-300"
+                >
+                    <span className="absolute left-0 block w-full h-0 transition-all duration-200 opacity-100 group-hover:h-12 ease"></span>
+                    <span className="relative mr-5">Mi novia</span>
+                </a>
                 <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12">
 
                     <a
