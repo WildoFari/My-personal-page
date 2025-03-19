@@ -19,12 +19,19 @@ export default function About() {
       animation.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.8 },
+        transition: {
+          duration: 0.8,
+          ease: 'easeOut',
+        },
       });
     } else {
       animation.start({
         opacity: 0,
         y: 50,
+        transition: {
+          duration: 0.8,
+          ease: 'easeOut',
+        },
       });
     }
   }, [inView, animation]);
@@ -36,11 +43,24 @@ export default function About() {
       rotate: 360,
       transition: {
         loop: Infinity,
-        duration: 10,
+        duration: 12,
         ease: 'linear',
       },
     });
   }, [spinAnimation]);
+
+  const profileImageAnimation = useAnimation();
+
+  useEffect(() => {
+    profileImageAnimation.start({
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: 'easeOut',
+      },
+    });
+  }, [profileImageAnimation]);
 
   return (
     <motion.section
@@ -48,7 +68,7 @@ export default function About() {
       className="py-20 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white px-6 md:px-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
     >
       <div ref={ref} className="max-w-4xl mx-auto text-center relative px-4 sm:px-6 md:px-0">
         <motion.h2
@@ -71,7 +91,11 @@ export default function About() {
       </div>
 
       <div className="flex justify-center">
-        <div className="relative w-56 h-56 sm:w-64 sm:h-64">
+        <motion.div
+          className="relative w-56 h-56 sm:w-64 sm:h-64"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={profileImageAnimation}
+        >
           <Image
             src={profileImage}
             alt="Foto de WilDev"
@@ -83,7 +107,7 @@ export default function About() {
             className="absolute inset-0 rounded-full border-4 border-blue-600 dark:border-blue-400"
             animate={spinAnimation}
           ></motion.div>
-        </div>
+        </motion.div>
       </div>
 
       <div ref={ref} className="mt-16 max-w-3xl mx-auto">
@@ -94,11 +118,18 @@ export default function About() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
           initial={{ opacity: 0, y: 50 }}
           animate={animation}
+          transition={{
+            duration: 0.8,
+            ease: 'easeOut',
+            staggerChildren: 0.2,
+          }}
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md hover:shadow-lg flex flex-col items-center text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <FaCode className="text-4xl text-blue-500 mb-4" />
             <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Desarrollo Web</h4>
@@ -109,6 +140,8 @@ export default function About() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md hover:shadow-lg flex flex-col items-center text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <FaMapSigns className="text-4xl text-green-500 mb-4" />
             <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Mi Viaje</h4>
@@ -119,6 +152,8 @@ export default function About() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md hover:shadow-lg flex flex-col items-center text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <FaRoad className="text-4xl text-yellow-500 mb-4" />
             <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Trail Running</h4>
