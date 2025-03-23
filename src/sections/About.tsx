@@ -5,7 +5,7 @@ import profileImage from '../../public/images/profile.jpg';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
-import { FaCode, FaRoad, FaMapSigns } from 'react-icons/fa';
+import { FaCode, FaRoad, FaMapSigns, FaCalculator } from 'react-icons/fa';
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -77,7 +77,7 @@ export default function About() {
           animate={animation}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          ¡Hola Mundo! Soy WilDev 🌍
+          ¡Hola Mundo! Soy WilDev
         </motion.h2>
 
         <motion.p
@@ -112,7 +112,7 @@ export default function About() {
 
       <div ref={ref} className="mt-16 max-w-3xl mx-auto">
         <h3 className="text-4xl font-semibold text-center mb-10 text-gray-900 dark:text-white">
-          Un Poco Sobre Mí ✨
+          Un Poco Sobre Mí
         </h3>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
@@ -159,6 +159,19 @@ export default function About() {
             <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Trail Running</h4>
             <p className="text-gray-600 dark:text-gray-400">Conectando con la naturaleza, un sendero a la vez.</p>
           </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+            className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md hover:shadow-lg flex flex-col items-center text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <FaCalculator className="text-4xl text-purple-500 mb-4" />
+            <h4 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Contabilidad</h4>
+            <p className="text-gray-600 dark:text-gray-400">Formándome en contabilidad para entender el lenguaje de los negocios.</p>
+          </motion.div>
+
         </motion.div>
       </div>
     </motion.section>
