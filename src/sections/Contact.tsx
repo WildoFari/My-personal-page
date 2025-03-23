@@ -15,7 +15,7 @@ export default function Contact() {
                         href="https://www.linkedin.com/in/wildo-fariña-gómez-3500522b9"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative inline-flex items-center justify-center px-6 py-3 font-medium text-blue-300 rounded-lg shadow-xl transition-all duration-300 hover:ring-2 hover:ring-blue-400 hover:bg-blue-900/30"
+                        className="group relative inline-flex items-center justify-center px-6 py-3 font-medium text-blue-300 rounded-lg shadow-xl transition-all duration-300 hover:ring-2 hover:ring-blue-400 hover:bg-gray-900 hover:bg-blue-900/30"
                     >
                         <span className="relative">LinkedIn</span>
                     </a>
@@ -25,7 +25,7 @@ export default function Contact() {
                         href="https://www.instagram.com/wildodevpy?igsh=MW81M2lqN3IxNmk3Yw%3D%3D&utm-source=qr"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative inline-flex items-center justify-center px-6 py-3 font-medium text-pink-300 rounded-lg shadow-xl transition-all duration-300 hover:ring-2 hover:ring-pink-400 hover:bg-pink-900/30"
+                        className="group relative inline-flex items-center justify-center px-6 py-3 font-medium text-pink-300 rounded-lg shadow-xl transition-all duration-300 hover:ring-2 hover:ring-pink-400 hover:bg-gray-900 hover:bg-pink-900/30"
                     >
                         <span className="relative">Instagram</span>
                     </a>
@@ -35,7 +35,7 @@ export default function Contact() {
                         href="https://github.com/WildoFari"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative inline-flex items-center justify-center px-6 py-3 font-medium text-indigo-300 rounded-lg shadow-xl transition-all duration-300 hover:ring-2 hover:ring-indigo-400 hover:bg-indigo-900/30"
+                        className="group relative inline-flex items-center justify-center px-6 py-3 font-medium text-indigo-300 rounded-lg shadow-xl transition-all duration-300 hover:ring-2 hover:ring-indigo-400 hover:bg-gray-900 hover:bg-indigo-900/30"
                     >
                         <span className="relative">GitHub</span>
                     </a>
