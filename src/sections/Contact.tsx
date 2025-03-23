@@ -2,10 +2,10 @@ export default function Contact() {
     return (
         <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 animate-pulse">
+                <h2 className="text-5xl font-extrabold mb-6 text-gray-300 hover:text-white cursor-default bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 ">
                     Contacto
                 </h2>
-                <p className="text-xl mb-10 text-gray-300">
+                <p className="text-xl mb-10 hover:text-white text-gray-500 cursor-default">
                     Conectá conmigo en redes sociales o seguí mi camino como desarrollador 🚀
                 </p>
 
@@ -41,7 +41,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <p className="text-lg mb-12 text-pink-300 font-medium mt-10">
+                <p className="text-sm mb-12 cursor-default text-pink-300 font-normal mt-10">
                     Tengo novia 🥰
                 </p>
 
@@ -49,7 +49,7 @@ export default function Contact() {
                     href="https://www.instagram.com/liz_fonseca18?igsh=MTRrNnp4dDludXg0dw=="
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mb-16 px-6 py-3 bg-pink-100 text-pink-700 rounded-full shadow-md hover:bg-pink-200 transition duration-300"
+                    className="inline-block mb-16 px-5 py-2 bg-pink-100 text-pink-700 text-xs rounded-full shadow-md hover:bg-pink-200 transition duration-300"
                 >
                     💖 Perfil de mi novia
                 </a>
