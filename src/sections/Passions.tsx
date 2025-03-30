@@ -59,7 +59,7 @@ export default function Passions() {
                     <PassionItem icon="💻" title="Desarrollo Web" description="Código, creatividad y experiencias interactivas." images={["/images/web1.jpg", "/images/web2.jpg", "/images/web3.jpg"]} />
                     <PassionItem icon="🚴" title="Andar en bicicleta" description="Cada pedaleada es una nueva aventura." images={["/images/bike1.jpg", "/images/bike2.jpg", "/images/bike3.jpg"]} />
                     <PassionItem icon="🏃" title="Trail Running" description="Superación, aire fresco y libertad en cada zancada." images={["/images/trail1.jpg", "/images/trail2.jpg", "/images/trail3.jpg"]} />
-                    <PassionItem icon="🎨" title="Anime" description="Imaginación sin límites en cada episodio." images={["/images/anime1.jpg", "/images/anime2.jpg", "/images/anime3.jpg"]} />
+                    <PassionItem icon="🎨" title="Anime" description="Imaginación sin límites en cada episodio." images={["/images/anime1.jpg", "/images/anime2.jpg", "/images/anime3.jpg", "/images/anime4.jpg"]} />
                     <PassionItem icon="🌍" title="Viajar" description="Nuevos paisajes, culturas y experiencias inolvidables." images={["/images/travel1.jpg", "/images/travel2.jpg", "/images/travel3.jpg"]} />
                     <PassionItem icon="🎵" title="Música" description="Ritmos y melodías que cuentan historias." images={["/images/music1.jpg", "/images/music2.jpg", "/images/music3.jpg"]} />
                     <PassionItem icon="🎮" title="Videojuegos" description="Estrategia, exploración y desafíos en cada partida." images={["/images/games1.jpg", "/images/games2.jpg", "/images/games3.jpg"]} />
