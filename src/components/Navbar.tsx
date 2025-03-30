@@ -43,8 +43,6 @@ export default function Navbar() {
                     <li><a href="#projects" className="hover:text-gray-300 transition-colors duration-300">Proyectos</a></li>
                     <li><a href="#gallery" className="hover:text-gray-300 transition-colors duration-300">Galería</a></li>
                     <li><a href="#contact" className="hover:text-gray-300 transition-colors duration-300">Contacto</a></li>
-
-
                 </ul>
             </div>
         </nav>
