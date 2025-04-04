@@ -55,13 +55,13 @@ export default function Passions() {
                     Descubre lo que me mueve 🚀
                 </motion.h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <PassionItem icon="💻" title="Desarrollo Web" description="Código, creatividad y experiencias interactivas." images={["/images/web1.jpg", "/images/web2.jpg", "/images/web3.jpg"]} />
-                    <PassionItem icon="🚴" title="Andar en bicicleta" description="Cada pedaleada es una nueva aventura." images={["/images/bike1.jpg", "/images/bike2.jpg", "/images/bike3.jpg"]} />
+                    <PassionItem icon="🚴" title="Andar en bicicleta" description="Cada pedaleada es una nueva aventura, un nuevo amanecer o atardecer." images={["/images/bike1.jpg", "/images/bike2.jpg", "/images/bike3.jpg"]} />
                     <PassionItem icon="🏃" title="Trail Running" description="Superación, aire fresco y libertad en cada zancada." images={["/images/trail1.jpg", "/images/trail2.jpg", "/images/trail3.jpg"]} />
-                    <PassionItem icon="🎨" title="Anime" description="Imaginación sin límites en cada episodio." images={["/images/anime1.jpg", "/images/anime2.jpg", "/images/anime3.jpg", "/images/anime4.jpg"]} />
+                    <PassionItem icon="🎨" title="Anime" description="Imaginación sin límites en cada episodio, de quienes aprendi a nunca rendirme." images={["/images/anime1.jpg", "/images/anime2.jpg", "/images/anime3.jpg", "/images/anime4.jpg"]} />
                     <PassionItem icon="🌍" title="Viajar" description="Nuevos paisajes, culturas y experiencias inolvidables." images={["/images/travel1.jpg", "/images/travel2.jpg", "/images/travel3.jpg"]} />
-                    <PassionItem icon="🎵" title="Música" description="Ritmos y melodías que cuentan historias." images={["/images/music1.jpg", "/images/music2.jpg", "/images/music3.jpg"]} />
+                    <PassionItem icon="🎵" title="Música" description="Ritmos y melodías que cuentan historias, que valen la pena escuchar." images={["/images/music1.jpg", "/images/music2.jpg", "/images/music3.jpg"]} />
                     <PassionItem icon="🎮" title="Videojuegos" description="Estrategia, exploración y desafíos en cada partida." images={["/images/games1.jpg", "/images/games2.jpg", "/images/games3.jpg"]} />
                     <PassionItem icon="📷" title="Fotografía" description="Instantes convertidos en recuerdos inmortales." images={["/images/photo1.jpg", "/images/photo2.jpg", "/images/photo3.jpg"]} />
                     <PassionItem icon="📚" title="Lectura" description="Un viaje sin fronteras a través de las palabras." images={["/images/reading1.jpg", "/images/reading2.jpg", "/images/reading3.jpg"]} />
