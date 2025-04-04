@@ -38,11 +38,51 @@ export default function Navbar() {
                 <ul
                     className={`md:flex gap-6 ${isOpen ? "block mt-4 md:mt-0" : "hidden"} md:block transition-all duration-300 ease-in-out`}
                 >
-                    <li><a href="#about" className="hover:text-gray-300 transition-colors duration-300">Sobre mí</a></li>
-                    <li><a href="#passions" className="hover:text-gray-300 transition-colors duration-300">Mis pasiones</a></li>
-                    <li><a href="#projects" className="hover:text-gray-300 transition-colors duration-300">Proyectos</a></li>
-                    <li><a href="#gallery" className="hover:text-gray-300 transition-colors duration-300">Galería</a></li>
-                    <li><a href="#contact" className="hover:text-gray-300 transition-colors duration-300">Contacto</a></li>
+                    <li>
+                        <a
+                            href="#about"
+                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+                            style={{ transitionDelay: "0.2s" }}
+                        >
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#passions"
+                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+                            style={{ transitionDelay: "0.3s" }}
+                        >
+                            Mis pasiones
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#projects"
+                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+                            style={{ transitionDelay: "0.4s" }}
+                        >
+                            Proyectos
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#gallery"
+                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+                            style={{ transitionDelay: "0.5s" }}
+                        >
+                            Galería
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+                            style={{ transitionDelay: "0.6s" }}
+                        >
+                            Contacto
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
