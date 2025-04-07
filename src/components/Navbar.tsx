@@ -76,9 +76,18 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a
-                            href="#contact"
+                            href="#medals"
                             className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
                             style={{ transitionDelay: "0.6s" }}
+                        >
+                            Medallas
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+                            style={{ transitionDelay: "0.7s" }}
                         >
                             Contacto
                         </a>

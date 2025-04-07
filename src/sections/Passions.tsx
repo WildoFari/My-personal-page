@@ -65,9 +65,10 @@ export default function Passions() {
                     <PassionItem icon="🎮" title="Videojuegos" description="Estrategia, exploración y desafíos en cada partida." images={["/images/games1.jpg", "/images/games2.jpg", "/images/games3.jpg"]} />
                     {/* <PassionItem icon="📷" title="Fotografía" description="Instantes convertidos en recuerdos inmortales." images={["/images/photo1.jpg", "/images/photo2.jpg", "/images/photo3.jpg"]} /> */}
                     <PassionItem icon="📚" title="Lectura" description="Un viaje sin fronteras a través de las palabras." images={["/images/reading1.jpg", "/images/reading2.jpg", "/images/reading3.jpg"]} />
-                    <PassionItem icon="🏋️" title="Gimnasio y Fitness" description="Disciplina, esfuerzo y bienestar en cada repetición." images={["/images/fitness1.jpg", "/images/fitness2.jpg", "/images/fitness3.jpg"]} />
+                    {/* <PassionItem icon="🏋️" title="Gimnasio y Fitness" description="Disciplina, esfuerzo y bienestar en cada repetición." images={["/images/fitness1.jpg", "/images/fitness2.jpg", "/images/fitness3.jpg"]} /> */}
                     <PassionItem icon="🎬" title="Cine y Series" description="Historias que emocionan y transportan." images={["/images/movies1.jpg", "/images/movies2.jpg", "/images/movies3.jpg"]} />
                     <PassionItem icon="🔧" title="Tecnología" description="Innovación que transforma la realidad." images={["/images/tech1.jpg", "/images/tech2.jpg", "/images/tech3.jpg"]} />
+                    <PassionItem icon="🏆" title="Medallas" description="Mis logros y medallas." images={["/images/medal1.jpg", "/images/medal2.jpg", "/images/medal3.jpg"]} />
                 </div>
             </div>
         </section>
