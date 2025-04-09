@@ -5,11 +5,19 @@ import { useState } from "react";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
+    // Cierra el menú al hacer clic en un enlace
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="bg-gradient-to-r from-gray-900 to-gray-800 text-white p-4 fixed w-full top-0 z-50 shadow-md transition-shadow duration-300">
-            <div className="container mx-auto flex justify-between items-center">
-                <a href="#" className="text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors duration-300">Mi Página</a>
+            <div className="max-w-6xl mx-auto flex justify-between items-center">
+                <a href="#" className="text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
+                    Mi Página
+                </a>
 
+                {/* Botón hamburguesa */}
                 <button
                     className="md:hidden text-white focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
@@ -35,14 +43,16 @@ export default function Navbar() {
                     </svg>
                 </button>
 
+                {/* Menú de navegación */}
                 <ul
-                    className={`md:flex gap-6 ${isOpen ? "block mt-4 md:mt-0" : "hidden"} md:block transition-all duration-300 ease-in-out`}
+                    className={`flex flex-col md:flex-row gap-4 md:gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent p-4 md:p-0 transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden md:flex"
+                        }`}
                 >
                     <li>
                         <a
                             href="#about"
-                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
-                            style={{ transitionDelay: "0.2s" }}
+                            onClick={handleLinkClick}
+                            className="block md:inline hover:text-gray-300 transition-colors duration-300"
                         >
                             Sobre mí
                         </a>
@@ -50,8 +60,8 @@ export default function Navbar() {
                     <li>
                         <a
                             href="#passions"
-                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
-                            style={{ transitionDelay: "0.3s" }}
+                            onClick={handleLinkClick}
+                            className="block md:inline hover:text-gray-300 transition-colors duration-300"
                         >
                             Mis pasiones
                         </a>
@@ -59,8 +69,8 @@ export default function Navbar() {
                     <li>
                         <a
                             href="#projects"
-                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
-                            style={{ transitionDelay: "0.4s" }}
+                            onClick={handleLinkClick}
+                            className="block md:inline hover:text-gray-300 transition-colors duration-300"
                         >
                             Proyectos
                         </a>
@@ -68,8 +78,8 @@ export default function Navbar() {
                     <li>
                         <a
                             href="#contact"
-                            className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
-                            style={{ transitionDelay: "0.7s" }}
+                            onClick={handleLinkClick}
+                            className="block md:inline hover:text-gray-300 transition-colors duration-300"
                         >
                             Contacto
                         </a>
