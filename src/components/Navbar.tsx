@@ -17,7 +17,6 @@ export default function Navbar() {
                     Mi Página
                 </a>
 
-                {/* Botón hamburguesa */}
                 <button
                     className="md:hidden text-white focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
@@ -43,7 +42,6 @@ export default function Navbar() {
                     </svg>
                 </button>
 
-                {/* Menú de navegación */}
                 <ul
                     className={`flex flex-col md:flex-row gap-4 md:gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent p-4 md:p-0 transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden md:flex"
                         }`}
