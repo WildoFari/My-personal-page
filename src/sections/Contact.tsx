@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <section id="contact" className="py-50 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-            <div className="container mx-auto px-4 text-center">
+            <div className="container mx-auto px-4 py-2 text-center">
                 <h2 className="text-5xl font-extrabold mb-2 text-gray-300 hover:text-white cursor-default bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 ">
                     Contacto
                 </h2>
