@@ -81,12 +81,12 @@ export default function About() {
         </motion.h2>
 
         <motion.p
-          className="text-lg sm:text-xl leading-relaxed text-gray-900 dark:text-gray-300 mb-8 sm:mb-10"
+          className="text-lg sm:text-xl md:text-3xl leading-relaxed text-gray-900 dark:text-gray-300 mb-8 sm:mb-10"
           initial={{ opacity: 0, y: 50, scale: 0.8 }}
           animate={animation}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          Un alma curiosa que se pierde entre líneas de código y senderos de montaña. Me encanta crear cosas nuevas, ya sean digitales o experiencias al aire libre.
+          Un alma curiosa que se pierde entre líneas de código y senderos de montaña.
         </motion.p>
       </div>
 
