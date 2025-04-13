@@ -112,7 +112,7 @@ export default function About() {
 
       <div ref={ref} className="mt-16 max-w-6xl mx-auto">
         <h3 className="text-4xl font-semibold text-center mb-10 text-gray-900 dark:text-white">
-          Un Poco Sobre Mí
+          Que hago.?
         </h3>
         <motion.div
           className="grid grid-cols-2 md:grid-cols-4 gap-8"
