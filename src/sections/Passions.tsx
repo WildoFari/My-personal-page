@@ -1,7 +1,8 @@
 "use client";
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
 import 'swiper/css';
 import { motion } from 'framer-motion';
 
@@ -12,7 +13,10 @@ interface PassionItemProps {
     images: string[];
 }
 
+
 function PassionItem({ icon, title, description, images }: PassionItemProps) {
+    const swiperRef = useRef<SwiperCore | null>(null);
+
     return (
         <motion.div
             className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-transform duration-300 hover:scale-105"
@@ -31,13 +35,45 @@ function PassionItem({ icon, title, description, images }: PassionItemProps) {
             <h3 className="text-xl font-semibold mb-2 text-gray-700">{title}</h3>
             <p className="text-gray-600 text-center mb-4">{description}</p>
 
-            <Swiper spaceBetween={10} slidesPerView={1} className="w-full rounded-lg overflow-hidden">
-                {images.map((image, index) => (
-                    <SwiperSlide key={index}>
-                        <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg" />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <div className="relative w-full">
+                <Swiper
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    className="w-full rounded-lg overflow-hidden"
+                    onSwiper={(swiper) => {
+                        swiperRef.current = swiper;
+                    }}
+                >
+                    {images.map((image, index) => (
+                        <SwiperSlide key={index}>
+                            <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg" />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+
+                <button
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-md z-10"
+                    onClick={() => swiperRef.current?.slidePrev()}
+                    aria-label="Imagen anterior"
+                    type="button"
+                    style={{ display: images.length > 1 ? 'block' : 'none' }}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <button
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-md z-10"
+                    onClick={() => swiperRef.current?.slideNext()}
+                    aria-label="Imagen siguiente"
+                    type="button"
+                    style={{ display: images.length > 1 ? 'block' : 'none' }}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
         </motion.div>
     );
 }
