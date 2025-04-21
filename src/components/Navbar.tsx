@@ -11,7 +11,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="bg-gradient-to-r from-gray-500 to-gray-800 text-white px-6 py-3 fixed w-full top-0 z-50 shadow-md transition-shadow duration-300">
+        <nav className="bg-gradient-to-r from-gray-900 to-gray-800 text-white px-6 py-3 fixed w-full top-0 z-50 shadow-md transition-shadow duration-300">
             <div className="max-w-6xl mx-auto flex items-center justify-between">
                 {/* Logo/Título a la izquierda */}
                 <a href="#" className="text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors duration-300 tracking-tight">
