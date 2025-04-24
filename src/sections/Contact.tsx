@@ -10,7 +10,7 @@ export default function Contact() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-                    {/* LinkedIn */}
+
                     <a
                         href="https://www.linkedin.com/in/wildo-fariña-gómez-3500522b9"
                         target="_blank"
