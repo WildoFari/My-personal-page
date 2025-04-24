@@ -29,7 +29,6 @@ export default function Contact() {
                         <span className="relative">Instagram</span>
                     </a>
 
-                    {/* GitHub */}
                     <a
                         href="https://github.com/WildoFari"
                         target="_blank"
