@@ -20,7 +20,6 @@ export default function Contact() {
                         <span className="relative">LinkedIn</span>
                     </a>
 
-                    {/* Instagram */}
                     <a
                         href="https://www.instagram.com/wildodevpy?igsh=MW81M2lqN3IxNmk3Yw%3D%3D&utm-source=qr"
                         target="_blank"
