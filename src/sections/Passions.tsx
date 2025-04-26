@@ -19,21 +19,22 @@ function PassionItem({ icon, title, description, images }: PassionItemProps) {
 
     return (
         <motion.div
-            className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-transform duration-300 hover:scale-105"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+        className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-transform duration-300 hover:scale-105 hover:rotate-1 ring-1 ring-gray-200 hover:ring-2 hover:ring-blue-400 group"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+    >
+        <motion.span
+            role="img"
+            aria-label={title}
+            className="text-6xl mb-4"
+            whileHover={{ rotate: 10 }}
         >
-            <motion.span
-                role="img"
-                aria-label={title}
-                className="text-6xl mb-4"
-                whileHover={{ rotate: 10 }}
-            >
-                {icon}
-            </motion.span>
-            <h3 className="text-xl font-semibold mb-2 text-gray-700">{title}</h3>
-            <p className="text-gray-600 text-center mb-4">{description}</p>
+            {icon}
+        </motion.span>
+        <h3 className="text-xl font-semibold mb-2 text-gray-700 group-hover:text-blue-600">{title}</h3>
+        <p className="text-gray-600 text-center mb-4 text-sm md:text-base">{description}</p>
+    
 
             <div className="relative w-full">
                 <Swiper
