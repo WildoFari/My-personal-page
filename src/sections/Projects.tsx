@@ -18,7 +18,7 @@ export default function Projects() {
                 </div>
                 <div className="p-6 rounded-lg shadow-xl bg-gradient-to-br from-gray-800 to-gray-700">
                     <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
-                        El siguiente siempre ya esta en camino
+                        {/* El siguiente siempre ya esta en camino */}
                     </h3>
                     {/* <p className="text-gray-300">
                         Se viene el proyecto sobre la web de WilDev, donde podras ver mi viaje, mis pasiones y mis proyectos.
