@@ -102,7 +102,6 @@ export default function Passions() {
                     <PassionItem icon="🎮" title="Videojuegos" description="Estrategia, exploración y desafíos en cada partida." images={["/images/games1.jpg", "/images/games2.jpg", "/images/games3.jpg", "/images/games4.jpg"]} />
                     {/* <PassionItem icon="📷" title="Fotografía" description="Instantes convertidos en recuerdos inmortales." images={["/images/photo1.jpg", "/images/photo2.jpg", "/images/photo3.jpg"]} /> */}
                     <PassionItem icon="📚" title="Lectura" description="Un viaje sin fronteras a través de las palabras." images={["/images/reading1.jpg", "/images/reading2.jpg", "/images/reading3.jpg", "/images/reading4.jpg"]} />
-                    {/* <PassionItem icon="🏋️" title="Gimnasio y Fitness" description="Disciplina, esfuerzo y bienestar en cada repetición." images={["/images/fitness1.jpg", "/images/fitness2.jpg", "/images/fitness3.jpg"]} /> */}
                 </div>
             </div>
         </section>
