@@ -81,7 +81,7 @@ export default function Navbar() {
                                 onClick={handleLinkClick}
                                 className="block md:inline hover:text-gray-300 transition-colors duration-300"
                             >
-
+                                Contacto
                             </a>
                         </li>
                     </ul>
