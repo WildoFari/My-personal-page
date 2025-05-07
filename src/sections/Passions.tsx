@@ -47,7 +47,7 @@ function PassionItem({ icon, title, description, images }: PassionItemProps) {
                 >
                     {images.map((image, index) => (
                         <SwiperSlide key={index}>
-                            <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg" />
+                            <img src={image} alt={title} className="w-full h-64 object-cover rounded-lg" />
                         </SwiperSlide>
                     ))}
                 </Swiper>
