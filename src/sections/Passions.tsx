@@ -64,7 +64,7 @@ function PassionItem({ icon, title, description, images }: PassionItemProps) {
                     </svg>
                 </button>
                 <button
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-gray-50 text-gray-900 rounded-full p-2 shadow-md z-10"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-gray-50 bg-opacity-20 bg-gray-50 text-gray-900 rounded-full p-2 shadow-md z-10"
                     onClick={() => swiperRef.current?.slideNext()}
                     aria-label="Imagen siguiente"
                     type="button"
