@@ -53,7 +53,7 @@ function PassionItem({ icon, title, description, images }: PassionItemProps) {
                 </Swiper>
 
                 <button
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-md hover:bg-gray-50 text-gray-900 rounded-full p-3 shadow-md z-10"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-md hover:bg-gray-50 bg-opacity-20 bg-gray-50 text-gray-900 rounded-full p-3 shadow-md z-10"
                     onClick={() => swiperRef.current?.slidePrev()}
                     aria-label="Imagen anterior"
                     type="button"
