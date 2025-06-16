@@ -10,7 +10,7 @@ export default function Projects() {
                     </h3>
                     <p className="text-gray-300">
                         Aplicación web para gestionar finanzas personales. Permite crear presupuestos, registrar gastos e ingresos, y visualizar informes financieros.
-                        <a href="https://finance-tracker-ruddy-five.vercel.app/" className="text-blue-400 hover:underline block mt-2">
+                        <a href="https://finance-tracker-ruddy-five.vercel.app/" className="text-green-500 hover:underline block mt-2">
                             Finance Tracket
                         </a>
                     </p>
