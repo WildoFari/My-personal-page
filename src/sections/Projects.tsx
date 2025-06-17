@@ -16,7 +16,7 @@ export default function Projects() {
                     </p>
                 </div>
                 <div className="p-6 rounded-lg shadow-xl bg-gradient-to-br from-gray-800 to-gray-700">
-                    <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
+                    <h3 className="text-2xl font-semibold  text-yellow-400">
                         El siguiente siempre ya esta en camino
                     </h3>
                 </div>
